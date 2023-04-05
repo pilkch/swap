@@ -8,7 +8,7 @@
 #include <sysexits.h>
 
 #define PROGRAM_NAME "swap"
-#define PROGRAM_VERSION 1.0f
+#define PROGRAM_VERSION "1.0"
 
 void print_usage()
 {
@@ -22,7 +22,7 @@ void print_usage()
 
 void print_version()
 {
-  printf("swap %.2f\n", PROGRAM_VERSION);
+  printf("swap " PROGRAM_VERSION "\n");
 }
 
 int main(int argc, char **argv)
