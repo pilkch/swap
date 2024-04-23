@@ -14,6 +14,15 @@ Build:
 make
 ```
 
+## Tests
+
+Run the tests:
+```bash
+cd tests
+./test-files.sh
+./test-directories.sh
+```
+
 ## Usage
 
 Create two files and swap them
