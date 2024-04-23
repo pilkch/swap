@@ -1,0 +1,25 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  tags:
+    - linux
+    - cpp
+    - make
+  script:
+    - make
+
+unit-test:
+  stage: test
+  needs: [build]
+  tags:
+    - linux
+    - cpp
+    - make
+  script:
+    - make
+    - cd tests
+    - ./test-files.sh
+    - ./test-folders.sh
